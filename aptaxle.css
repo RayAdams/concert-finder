@@ -1,0 +1,124 @@
+body {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+} 
+
+.hero-photo {
+  width: 100vw;
+  height: 40em;
+  background-image: url(images/Photo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  width: 100vw;
+  height: 40em;
+  background: #5c4e48;
+  background-image: url(images/overlay.png);
+  background: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0) 100%);
+} 
+
+#header-list {
+  text-align: right;
+}
+
+.header-text {
+  border-radius: 0px;
+  width: 204px;
+  height: 15px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 12.0px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  text-align: right;
+}
+
+#join-btn {
+  border-radius: 0px;
+  width: 44px;
+  height: 16px;
+  color: #e2694c;
+  font-family: Lato;
+  font-size: 13.0px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  text-align: left;
+}
+
+#headline {
+  width: 1280px;
+  height: 77px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 64px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 300;
+  text-align: center;
+  /*box-shadow: 0px 1px 6px rgba(0,0,0,0.3);*/
+}
+
+#subhead {
+  border-radius: 0px;
+  width: 1280px;
+  height: 39px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 32.0px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 300;
+  text-align: center;
+  /*box-shadow: 0px 1px 6px rgba(0,0,0,0.3);*/
+}
+
+
+#find-btn {
+  font-size: 15px;
+  color: rgb(255,255,255);
+  font-family: "Lato";
+  font-weight: bold;
+  text-align: center;
+  width: 188px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #90c45b;
+}
+
+#featured-links {
+  font-size: 15px;
+  color: rgb(77,79,86);
+  font-family: "Lato";
+  border-bottom: 3px solid #90c45b;
+}
+
+
+#footer-border {
+    width: 100wv;
+    height: 1px;
+    background-color: rgba(179,181,190,0.4);
+}
+
+#footer-aptaxle {
+    font-size: 13px;
+    color: rgb(179,181,190);
+    font-family: "Lato-Light";
+}
+
+#footer-social-icons {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #4d4f55;
+}
