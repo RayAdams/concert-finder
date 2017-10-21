@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, width=device-width">
 	<title>Aptaxle</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -17,180 +17,164 @@
 	<div class="jumbotron-fluid">
 		<div class="hero-photo">
 			<div id="overlay">
-				<div>
-					<nav>
-						<ul>
-							<li><a class="header-text" href="#">Browse</a></li>
-							<li><a class="header-text" href="#">Discover</a></li>
-							<li><a class="header-text" href="#">Add Event</a></li>
-							<li class="btn"><a class="join-btn" href="#">Join us</a></li>
-						</ul>
-					</nav>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2" id="headline">Amazing performances near you</h1>							
-					</div> 
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2" id="subhead">Discover the top live music events in the Southeast</h3>						
+				<nav>
+					<ul>
+						<li><a class="header-text" href="#">Browse</a></li>
+						<li><a class="header-text" href="#">Discover</a></li>
+						<li><a class="header-text" href="#">Add Event</a></li>
+						<li><button class="join-btn" href="#">Join us</button></li>
+					</ul>
+				</nav>
+				<div class="row-fluid">
+					<div class="col-sm-12 col-md-8 col-md-offset-2" id="headline">Amazing performances near you</div>							
+				</div> 
+				<div class="row-fluid">
+					<div class="col-sm-12 col-md-8 col-md-offset-2" id="subhead">Discover the top live music events in the Southeast</div>						
+				</div>
+				<form class="form-text">
+					<div class="row-fluid">
+						<input id="input-box" class="col-xs-12 col-md-6 col-md-offset-3" type="text" placeholder="Enter your favorite artist or genre">
 					</div>
-					<form>
-						<div class="row">
-							<input id="input-box" class="col-md-6 col-md-offset-3 form-text" type="text" placeholder="Enter your favorite artist or genre">
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<div class="row">
-									<div class="col-md-4 form-spacing">
-										<select class="select-box form-text">
-											<option value="">Location</option>
-											<option value="1">Nashville, TN</option>
-											<option value="2">Atlanta, GA</option>
-											<option value="3">Birmingham, AL</option>
-										</select>
-									</div>
-									<div class="col-md-4 form-spacing">
-										<select class="select-box form-text">
-											<option value="">Budget</option>
-											<option value="1">0-$50</option>
-											<option value="2">0-$100</option>
-											<option value="3">0-$200</option>
-										</select>
-									</div>
-									<div class="col-md-4 form-spacing">
-										<button id="find-btn">Find events</button>
-									</div>
+					<div class="row-fluid">
+						<div class="col-md-6 col-md-offset-3 form-spacing">
+							<div class="row-fluid">
+								<div class="col-xs-6 col-sm-4 col-md-4 select-spacing">
+									<select class="select-box arrow">
+										<option value="">Location</option>
+										<option value="1">Nashville, TN</option>
+										<option value="2">Atlanta, GA</option>
+										<option value="3">Birmingham, AL</option>
+									</select>
+								</div>
+								<div class="col-xs-6 col-sm-3 col-md-4 select-spacing">
+									<select class="select-box arrow">
+										<option value="">Budget</option>
+										<option value="1">0-$50</option>
+										<option value="2">0-$100</option>
+										<option value="3">0-$200</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-sm-4 col-md-4 button-spacing">
+									<button id="find-btn">Find events</button>
 								</div>
 							</div>
 						</div>
-					</form>
-				</div>
-<!--end of hero container above-->
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
-<!--end of hero above-->
+</div>
+
 
 <div class="container-fluid">
-	<div class="row">
+	<div class="row-fluid">
 		<div class="col-md-12">
 			<ul id="featured-links">
-				<li class="selected-link">Most Popular</li>
-				<li>Coming up</li>
-				<li>Near you</li>
+				<li class="filter"><a href="#"><span class="selected-link">Most</span> Popular</a></li>
+				<li class="filter"><a href="#">Coming up</a></li>
+				<li class="filter"><a href="#">Near you</a></li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="row">
-		
-			<div class="col-md-4">
-				<picture>
-					<img class="event-img" src="images/image1.png" />
-				</picture>
-				<div class="row">
-					<p class="genre">COUNTRY</p>
-				</div>
-				<div class="row">
-					<p class="artist">Kenny Chesney w/ Grace Potter</p>
-				</div>
-					<div class="row">
-						<div class="col-md-2">
-							<dl>
-								<dt class="location-title">LOCATION</dt>
-								<!--<span class="horizontal-divider"></span>-->
-								<dd class="city">Nashville, TN</dd>                    
-							</dl>
-						</div>
-						<div class="col-md-2">
-								<!--<span class="vertical-divider"></span>-->
-							<dl>
-								<dt class="price-title">PRICE</dt>
-								<dd class="price">$30-260</dd>
-							</dl>
-						</div>
-					</div>
-				</div>
-			
-
-			
-			<div class="col-md-4">
-				<picture>
-					<img class="event-img" src="images/image2.png" />
-				</picture>
-				<div class="row">
-					<p class="genre">JAZZ</p>
-				</div>
-				<div class="row">
-					<p class="artist">Gerald Albright Band</p>
-				</div>
-				<div class="row">
-					<div class="col-md-2">
-						<dl>
-							<dt class="location-title">LOCATION</dt>
-							<!--<span class="horizontal-divider"></span>-->
-							<dd class="city">Atlanta, GA</dd>                    
-						</dl>
-					</div>
-						<!--<span class="vertical-divider"></span>-->
-					<div class="col-md-2">
-						<dl>
-							<dt class="price-title">PRICE</dt>
-							<dd class="price">$15-90</dd>
-						</dl>
-					</div>
-				</div>
+	<div class="row-fluid">
+		<div class="event-container col-xs-12 col-sm-12 col-md-4">
+			<picture>
+				<img class="event-img" src="images/image1.png" />
+			</picture>
+			<div class="row-fluid">
+				<p class="genre">COUNTRY</p>
 			</div>
-
-			<div class="col-md-4">
-				<picture>
-					<img class="event-img" src="images/image3.png" />
-				</picture>
-				<div class="row">
-					<p class="genre">ELECTRONIC</p>
-				</div>
-				<div class="row">
-					<p class="artist">The Rock Church</p>
-				</div>
-				<div class="row">
-					<div class="col-md-2">
+			<div class="row-fluid">
+				<div class="artist">Kenny Chesney w/ Grace Potter</div>
+			</div>
+				<div class="row-fluid">
+					<div class="col-xs-6 col-md-6 event-border">
 						<dl>
 							<dt class="location-title">LOCATION</dt>
-							<dd class="city">Birmingham, AL</dd>                    
+							<dd class="city">Nashville, TN</dd>                    
 						</dl>
 					</div>
-					<!--<span class="horizontal-divider"></span>-->
-					<div class="col-md-2">
-							<!--<span class="vertical-divider"></span>-->
+					<div class="col-xs-6 col-md-6 event-border-top">
 						<dl>
 							<dt class="price-title">PRICE</dt>
-							<dd class="price">$20-40</dd>
+							<dd class="price">$30-260</dd>
 						</dl>
 					</div>
+				</div>
+		</div>
+
+		<div class="event-container col-xs-12 col-sm-6 col-md-4">
+			<picture>
+				<img class="event-img" src="images/image2.png" />
+			</picture>
+			<div class="row-fluid">
+				<p class="genre">JAZZ</p>
+			</div>
+			<div class="row-fluid">
+				<div class="artist">Gerald Albright Band</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-xs-6 col-md-6 event-border">
+					<dl>
+						<dt class="location-title">LOCATION</dt>
+						<dd class="city">Atlanta, GA</dd>                    
+					</dl>
+				</div>
+				<div class="col-xs-6 col-md-6 event-border-top">
+					<dl>
+						<dt class="price-title">PRICE</dt>
+						<dd class="price">$15-90</dd>
+					</dl>
+				</div>
 			</div>
 		</div>
-<!--end of row below-->
-	<div class="row">
-		<div class="col-md-12 center">
-			<button id="discover-btn">Discover more</button>
+
+		<div class="event-container col-xs-12 col-sm-6 col-md-4">
+			<picture>
+				<img class="event-img" src="images/image3.png" />
+			</picture>
+			<div class="row-fluid">
+				<p class="genre">ELECTRONIC</p>
+			</div>
+			<div class="row-fluid">
+				<div class="artist">The Rock Church</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-xs-6 col-md-6 event-border">
+					<dl>
+						<dt class="location-title">LOCATION</dt>
+						<dd class="city">Birmingham, AL</dd>                    
+					</dl>
+				</div>
+				<div class="col-xs-6 col-md-6 event-border-top">
+					<dl>
+						<dt class="price-title">PRICE</dt>
+						<dd class="price">$20-40</dd>
+					</dl>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!--container-fluid div ending below-->
+
+		<div class="row-fluid">
+			<div class="col-xs-12 col-sm-12 col-md-12" align="center">
+				<button id="discover-btn"><a href="#">Discover more</a></button>
+			</div>
+		</div>
 </div>
 
-	
-
-<!--end of events-->
-
-<footer id="footer-border">
-	<div id="footer-aptaxle" class="row">
-			<div class="col-sm-12">
-				<span class="footer-links-a">&copy; 2015 Aptaxle</span>
-				<a class="footer-links-a" href="#">Privacy Policy</a>
-				<a class="footer-links-a" href="#">Terms of Use</a>
-				<a href="#"><i id="footer-social-icons" class="fa fa-facebook center" aria-hidden="true"></i></a>
-				<a href="#"><i id="footer-social-icons" class="fa fa-twitter" aria-hidden="true"></i></a>
-				<a href="#"><i id="footer-social-icons" class="fa fa-google-plus" aria-hidden="true"></i></a>
-			</div>
-					
+<footer>
+	<div id="footer-aptaxle" class="row-fluid">
+		<div id="footer-border" class="col-xs-12 col-md-12">
+			<span class="footer-text">&copy; 2015 Aptaxle</span>
+			<a class="footer-text footer-links-a" href="#">Privacy Policy</a>
+			<a class="footer-text footer-links-a" href="#">Terms of Use</a>
+			<a href="#"><i id="footer-social-icons" class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i id="footer-social-icons" class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i id="footer-social-icons" class="fa fa-google-plus" aria-hidden="true"></i></a>
+		</div>					
 	</div>
 </footer>
 
