@@ -41,6 +41,12 @@ li {
   background: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0) 100%);
 } 
 
+.logo {
+  height: 4em;
+  margin: 1em;
+  float: left;
+}
+
 .header-text, .header-text:hover {
   color: #ffffff;
   font-family: "Lato";
