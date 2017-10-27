@@ -177,7 +177,7 @@ select.arrow {
 .event-img {
   border-radius: 3px;
   background-color: rgba(0,0,0,0);
-  background-image: fill;
+  background-size: cover;
   width: 100%;
 }
 
@@ -263,7 +263,7 @@ select.arrow {
 }
 
 #footer-border {
-    width: 100wv;
+    width: 100vw;
     border-top: 1px solid rgba(179,181,190,0.4);
 }
 
